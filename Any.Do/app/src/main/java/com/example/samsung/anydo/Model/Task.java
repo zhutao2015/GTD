@@ -11,6 +11,7 @@ public class Task {
     private String name;
     private Date time;
     private List<String> subtaskList=new ArrayList<>();
+    private Date createTime;
     public Task(String name){
         this.name=name;
     }
@@ -33,4 +34,11 @@ public class Task {
         return this.subtaskList;
     }
 
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
 }
