@@ -1,5 +1,6 @@
 package com.example.samsung.anydo.Model;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -9,7 +10,7 @@ import java.util.List;
 public class Task {
     private String name;
     private Date time;
-    private List<String> list
+    private List<String> subtaskList=new ArrayList<>();
     public Task(String name){
         this.name=name;
     }
@@ -24,6 +25,12 @@ public class Task {
     }
     public void setTime(Date time){
         this.time=time;
+    }
+    public void setSubtaskList(List list){
+        subtaskList.addAll(list);
+    }
+    public List getSubtaskList(){
+        return this.subtaskList;
     }
 
 }
