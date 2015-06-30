@@ -8,10 +8,12 @@ import java.util.List;
  * Created by samsung on 29/06/2015.
  */
 public class Task {
+    private String taskTitle;
     private String name;
     private Date time;
     private List<String> subtaskList=new ArrayList<>();
     private Date createTime;
+
     public Task(String name){
         this.name=name;
     }
@@ -40,5 +42,13 @@ public class Task {
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
+    }
+
+    public String getTaskTitle() {
+        return taskTitle;
+    }
+
+    public void setTaskTitle(String taskTitle) {
+        this.taskTitle = taskTitle;
     }
 }
